@@ -1,5 +1,5 @@
 # auto-setup
-auto-setup is a short script written in bash that I've used for setting up Arch based systems for a long time now, and I might as well upload it to github
+auto-setup is a short script written in bash that I've used for setting up Arch and Debian (Work in progress) based systems for a long time now, and I might as well upload it to github
 
 To use auto-setup run the following commands: 
 
