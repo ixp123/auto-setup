@@ -1,16 +1,18 @@
 #!/bin/bash
 
 #Making some required directories
-mkdir ~/github
-mkdir ~/discord
-mkdir ~/.fonts
-cd ~/github
+mkdir github
+mkdir .fonts
+cd github
 
 #Installs required applications
-sudo apt install gimp
-sudo apt install emacs
-sudo apt install build-essential make bison flex libpam0g-dev
-sudo apt install libx11-dev libxft-dev
+sudo pacman -S doas
+sudo pacman -S xorg
+sudo pacman -S xorg-server
+sudo pacman -S xinit
+sudo pacman -S gimp
+sudo pacman -S discord
+sudo pacman -S emacs
 
 #Cloning repos
 git clone https://github.com/ixp123/dwmconf
@@ -20,7 +22,7 @@ git clone https://github.com/ixp123/myfonts
 git clone https://github.com/ixp123/bashrc
 git clone https://git.suckless.org/dmenu
 git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
-git clone https://github.com/slicer69/doas.git
+
 
 #Compile applications
 cd dwmconf
@@ -49,21 +51,32 @@ sudo make clean install
 
 ~/.emacs.d/bin/doom install
 
-cd ~/github/doas
-sudo make
-sudo make install
-touch /usr/local/etc/doas.conf
+#Configures doas
 echo "permit $USER as root" /usr/local/etc/doas.conf
 
-#Install discord
-cd ~/discord
-wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-sudo dpkg -i ~/discord/discord.deb
-
 #Updates the system 
-sudo apt update && sudo apt upgrade
+sudo pacman -Syyu
 
 #Finish
-echo Autorice script is done, reboot, and when prompted at login screen, press ALT+CTRL+F2, and then enter 'startx'
+echo auto-setup is done, reboot, and when prompted at login screen, press ALT+CTRL+F2, and then enter 'startx'
 #done
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

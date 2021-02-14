@@ -18,7 +18,7 @@ sudo emerge -a xfce
 #Cloning repos
 git clone https://github.com/ixp123/dwmconf
 git clone https://github.com/ixp123/stconf
-git clone https://github.com/ixp123/slstatusconf
+git clone https://github.com/ixp123/dwmblocks
 git clone https://github.com/ixp123/myfonts
 git clone https://github.com/ixp123/bashrc
 git clone https://git.suckless.org/dmenu
@@ -35,7 +35,8 @@ sudo make clean install
 cd ~/github/stconf/st-0.8.4
 sudo make clean install
 
-cd ~/github/slstatusconf/slstatus
+cd ~/github/dwmblocks
+rm blocks.h
 sudo make clean install
 
 cd ~/github/myfonts
