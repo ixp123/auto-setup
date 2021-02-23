@@ -13,8 +13,8 @@ sudo chmod +x auto-setup.sh
 
   Installs a required font for ST
 
-  Clones my repos: dwmconf, stconf, slstatusconf, and myfonts
+  ##Clones my repos: bspwm, sxhkd, bashrc, and myfonts
 
-  It proceeds to build these programs
+  It proceeds to install & configure these programs
 
   I am planning on adding more to this script in the future, you are free to fork it and make it your own.
