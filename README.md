@@ -3,15 +3,14 @@ auto-setup is a short script written in bash (Sorry zsh and fish users, make you
 
 To use auto-setup run the following commands: 
 
-sudo chmod +x auto-setup.sh
+sudo chmod +x quickset.sh
 
-./auto-setup.sh
+./quickset.sh
 
 
 
-  All auto-setup does is, makes a github and .fonts directory
+  All quickset does is, makes a github and .fonts directory
 
-  Installs a required font for ST
 
   ## Clones my repos: bspwm, sxhkd, bashrc, and myfonts
 
